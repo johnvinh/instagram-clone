@@ -1,6 +1,6 @@
 ﻿namespace InstagramClone.Data;
 
-public class DbContext
+public class InstaDbContext : D
 {
     
 }
