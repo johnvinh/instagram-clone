@@ -1,6 +1,13 @@
-﻿namespace InstagramClone.Data;
+﻿using InstagramClone.Models;
+using Microsoft.EntityFrameworkCore;
 
-public class InstaDbContext : DbCont
+namespace InstagramClone.Data;
+
+public class InstaDbContext : DbContext
 {
+    public InstaDbContext(DbContextOptions<InstaDbContext> options) : base(options)
+    {
+    }
     
+    public DbSet<User> Users { get; set; }
 }
